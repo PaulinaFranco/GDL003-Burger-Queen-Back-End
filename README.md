@@ -140,7 +140,7 @@ $ now secrets add token "this is actually supposed to be a secret"
 > Success! Secret token added (lupomontero) [1s]
 ```
 
-Recurda que solo necesitas _crear_ los secretos una vez. No es necesario
+Recurda que sólo necesitas _crear_ los secretos una vez. No es necesario
 crearlos cada vez que vayas a desplegar cambios.
 
 Una vez configurados los _secretos_ en el servidor, podemos proceder con el
