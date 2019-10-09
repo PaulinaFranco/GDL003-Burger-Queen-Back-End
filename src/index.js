@@ -1,11 +1,2 @@
-// Hola mongodb
-var express = require('express');
-var app = express();
-
-app.get('/', function (req, res) {
-  res.send('Hello Woooorld!');
-});
-
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+require('dotenv').config();
+console.log(process.env.DB_USERNAME)

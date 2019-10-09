@@ -2,9 +2,11 @@
   "name": "gdl003-burger-queen-back-end",
   "version": "1.0.0",
   "description": "Tu equipo del Open House necesita un Back-end para almacenar y manejar la data de la aplicación.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+    
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,18 @@
   "homepage": "https://github.com/karo0wk/GDL003-Burger-Queen-Back-End#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.2",
     "mongoose": "^5.7.1",
-    "newman": "^4.5.4"
-  }
+    "morgan": "^1.9.1",
+    "newman": "^4.5.4",
+    "process-env": "^1.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "webpack": "^4.41.0"
+  },
+  "keywords": []
 }
