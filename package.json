@@ -26,11 +26,11 @@
     "mongodb": "^3.3.2",
     "mongoose": "^5.7.1",
     "morgan": "^1.9.1",
-    "newman": "^4.5.4",
+   
     "process-env": "^1.1.0"
   },
   "devDependencies": {
-    "@now/node": "^1.0.1",
+    
     "cross-env": "^6.0.3",
     "webpack": "^4.41.0"
   },
