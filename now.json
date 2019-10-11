@@ -8,9 +8,24 @@
 ],
 "routes": [
     {
-      "src": "/foods",
-      "dest": "/server.js",
-      "methods": ["GET"]
-    }
+        "src": "/foods",
+        "dest": "/server.js",
+        "methods": ["GET","POST"]
+      },
+    {
+        "src": "/foods/:foodId",
+        "dest": "/server.js",
+        "methods": ["GET"]
+      },
+      {
+        "src": "/foods/:foodId",
+        "dest": "/server.js",
+        "methods": ["PUT"]
+      },
+      {
+        "src": "/foods/:foodId",
+        "dest": "/server.js",
+        "methods": ["DELETE"]
+      }
 ]
 }

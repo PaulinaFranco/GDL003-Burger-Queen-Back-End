@@ -24,8 +24,8 @@ app.get('/', (req, res) => {
 
 // Require Orders routes
 require('./app/routes/order.routes.js')(app);
-// Require Foods routes
-require('./app/routes/food.routes.js')(app);
+// Require Products routes
+require('./app/routes/product.routes.js')(app);
 
 
 // listen for requests
