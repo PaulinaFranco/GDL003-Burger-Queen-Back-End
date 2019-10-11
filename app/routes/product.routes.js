@@ -1,6 +1,6 @@
 var cors = require('cors')
 module.exports = (app) => {
-    const products = require('../controllers/product.controller.js/index.js');
+    const products = require('../controllers/product.controller.js');
     app.use(cors({credentials: true,}));
     // Create a new Product
     app.post('/', products.create);
