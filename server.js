@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 
 // define a simple route
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to Veganfood application. Take orders quickly. Organize and keep track of all your orders."});
+    res.json({"message": "Welcome to Tlacuali application. Take orders quickly. Organize and keep track of all your orders."});
 });
 
 

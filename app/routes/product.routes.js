@@ -3,7 +3,7 @@ module.exports = (app) => {
     const products = require('../controllers/product.controller.js');
     app.use(cors({credentials: true,}));
     // Create a new Product
-    app.post('/', products.create);
+    app.post('/products', products.create);
 
     // Retrieve all Products
     app.get('/products', products.findAll);

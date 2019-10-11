@@ -35,8 +35,8 @@ exports.create = (req, res) => {
 // Retrieve and return all products from the database.
 exports.findAll = (req, res) => {
     Product.find()
-    .then(products => {
-        res.send(products);
+    .then(product => {
+        res.send(product);
     }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while retrieving product."
@@ -81,8 +81,8 @@ exports.update = (req, res) => {
 
     // Find product and update it with the request body
     Product.findByIdAndUpdate(req.params.productId, {
-        title: req.body.title || "Untitled Product",
-        content: req.body.content
+        product: req.body.product || "Untitled Product",
+        price: req.body.price
     }, {new: true})
     .then(product => {
         if(!product) {
