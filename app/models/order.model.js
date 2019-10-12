@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const OrderSchema = mongoose.Schema({
-    title: String,
+    order: String,
     content: String
 }, {
     timestamps: true

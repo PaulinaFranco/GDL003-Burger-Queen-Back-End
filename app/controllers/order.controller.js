@@ -11,7 +11,7 @@ exports.create = (req, res) => {
 
     // Create a Order
     const order = new Order({
-        title: req.body.title || "Untitled Order", 
+        order: req.body.order || "Untitled Order", 
         content: req.body.content
     });
 
@@ -72,7 +72,7 @@ exports.findOne = (req, res) => {
 // Update a order identified by the orderId in the request
 exports.update = (req, res) => {
     // Validate Request
-    if(!req.body.content) {
+    if(!req.body) {
         return res.status(400).send({
             message: "Order content can not be empty"
         });
@@ -80,7 +80,7 @@ exports.update = (req, res) => {
 
     // Find order and update it with the request body
     Order.findByIdAndUpdate(req.params.orderId, {
-        title: req.body.title || "Untitled Order",
+        order: req.body.order || "Untitled Order",
         content: req.body.content
     }, {new: true})
     .then(order => {

@@ -73,7 +73,7 @@ exports.findOne = (req, res) => {
 // Update a product identified by the productId in the request
 exports.update = (req, res) => {
     // Validate Request
-    if(!req.body.content) {
+    if(!req.body) {
         return res.status(400).send({
             message: "Product content can not be empty"
         });
